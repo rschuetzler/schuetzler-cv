@@ -1,0 +1,208 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+% Requires DejaVuSansMono and LinLibertine fonts
+% Download Deja Vu here: http://dejavu-fonts.org/wiki/Download
+% and lin libertine here: http://www.dafont.com/linux-libertine.font
+% For libertine you need R, RB, RBI, and RI fonts
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Ryan Schuetzler - Vita},
+	pdfauthor={Ryan Schuetzler},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Ryan Schuetzler}\\[1cm]
+ Management Information Systems Department\\
+ Center for the Management of Information\\
+ McClelland Hall, Room 427\\
+ 1130 East Helen Street\\
+ PO Box 210108\\
+ Tucson, AZ \texttt{85721-0108}
+U.S.A.\\[.2cm]
+Phone: \texttt{(520) 390-3247}\\[.2cm]
+email: \href{mailto:ryan@schuetzler.net}{ryan@schuetzler.net}\\
+\textsc{url}: \href{http://www.schuetzler.net}{http://www.schuetzler.net}\\ 
+\vfill
+
+%%\hrule
+\section*{Current position}
+\emph{Doctoral Student}, University of Arizona, Tucson
+
+
+\section*{Research Interests}
+
+My research interests center around users' adaptation and use of automated
+communication technology. My research focuses on human interaction with embodied
+conversational agents and chat bots, and the influence of those chat bots on
+users' feelings and behavior toward those systems. I focus on a design science
+methodology following the Last Research Mile methodology. Much of my research
+involves laboratory experiments.
+
+%%\hrule
+\section*{Areas of specialization}
+%! Fill this out
+Human-Computer Interaction $\bullet$  Deception $\bullet$ Conversational Agents
+
+%%\hrule
+% \section*{Appointments held}
+% \noindent
+% \years{1903-1908}Swiss Patent Office, Bern\\
+% \years{1908-1911}University of Bern\\
+% \years{1911-1912}University of Zürich\\
+% \years{1912-1914}Charles University of Prague\\
+% \years{1914-1932}Prussian Academy of Sciences, Berlin\\
+% \years{1920-1930}University of Leiden\\
+% \years{1932-1955}Institute for Advanced Study, Princeton
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2010}\textsc{MS} in Information Systems Management, Brigham Young University\\
+\years{2010}\textsc{BS} in Information Systems, Brigham Young University 
+
+%\hrule
+\section*{Grants, honors \& awards}
+\noindent
+\years{2011-2014} \$165,000 in research grants, Center for Identification
+Technology Research\\\\
+\years{2011} Science Foundation Arizona Graduate Research Fellowship
+
+\section*{Publications \& talks}
+
+\subsection*{Journal articles}
+\noindent
+\years{in press}Burgoon, J. K., Proudfoot, J. G., Schuetzler, R. and Wilson,
+D. W. (in press) Patterns of nonverbal behavior associated with truth and
+deception. \emph{Journal of Nonverbal Behavior}.\\\\
+\years{2011}Barlow, J. B., Giboney, J. S., Keith, M. J., Wilson, D. W.,
+Schuetzler, R., Lowry, P. B., \& Vance, A. (2011). Overview and guidance on agile
+development in large organizations. \emph{Communications of the Association for
+  Information Systems}, 29(1), 25–44.\\
+
+
+\subsection*{Conference proceedings}
+\noindent
+\years{2013}Schuetzler, R. \& Wilson, D. W. (2013) Real-time embodied agent adaptation. \emph{Hawaii International Conference on System Sciences}.\\\\
+\years{2012}Schuetzler, R. (2012) Countermeasures and eye tracking deception
+detection. \emph{Hawaii International Conference on System Sciences}.\\\\
+Nunamaker, J. F., Jr., Burgoon, J. K., Twyman, N. W., Proudfoot, J. G.,
+Schuetzler, R., and Giboney, J. S. (2012) Establishing a foundation for human
+credibility screening. \emph{2012 IEEE International Conference on Intelligence
+  and Security Informatics (ISI)}.\\\\
+Burgoon, J. K., Wilson, D. W., Schuetzler, R. and Hass, M. (2012) Interactive deception in group decision-making. \emph{National Communication Association Convention}.\\\\
+Burgoon, J. K., Schuetzler, R., and Wilson, D. W. (2012) Uncovering hidden patterning in interpersonal communication: Illustration with deceptive and truthful interactions. \emph{National Communication Association Convention}.\\\\
+\years{2011}Proudfoot, J. G., Giboney, J. S., Schuetzler, R. and Durcikova, A. (2011). Trends in phishing attacks: Suggestions for future research. \emph{Americas Conference on Information Sciences}.\\\\
+\years{2010}Lowry, P. B., Giboney, J. S., Schuetzler, R., Richardson, J., Gregory, T., Romney, J., \& Anderson, B. (2010). The value of distrust in computer-based decision-making groups. In \emph{Proceedings of the 43rd Hawaii International Conference on System Sciences}.\\
+
+\section*{Teaching}
+
+\subsection*{Teaching Philosophy}
+I believe that the purpose of a university education is to teach students how to
+think and how to learn. With the ever-changing technological landscape, the need
+to memorize information is nearly nonexistent. As such, my instruction focuses
+on giving students the hands-on experience and skills that they could not easily
+Google in the future. I believe in equipping students with a level of knowledge
+and understanding of course topics so they can converse intelligently and
+understand reference material easily available on the web.\\
+
+My course instruction centers on class participation and understanding. When
+possible I bring hands-on lab exercises and learning activities to aid students
+in internalizing course material.
+
+\subsection*{Courses Taught}
+
+\years{2013}MIS 307 - Introduction to Business Data Communications (evaluations pending)\\
+\years{2012}MIS 111 - Introduction to Management Information Systems (4.9/5.0)
+
+%\hrule
+\section*{Service to the profession}
+Peer review work for:
+
+\begin{itemize}
+\itemsep0em
+\item International Conference on Information Systems
+\item Hawaii International Conference on System Sciences
+\item Americas Conference on Information Systems
+\item Special Interest Group on Human-Computer Interaction
+\item IEEE, SMC-A
+\item Mensa Research Journal
+\end{itemize}
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+% \href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}
+}
+\end{center}
+
+\end{document}
