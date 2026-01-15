@@ -1,0 +1,187 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee
+% that it will correctly compile on your system if you have a non-standard
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+% Requires DejaVuSansMono and LinLibettine fonts
+% Download Deja Vu here: http://dejavu-fonts.org/wiki/Download
+% and lin libertine here: http://www.dafont.com/linux-libertine.font
+% For libertine you need R, RB, RBI, and RI fonts
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, letter]{article}
+\usepackage{fontspec}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry}
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm,
+bookmarks, colorlinks, breaklinks=true,
+	pdftitle={Ryan Schuetzler - Vita},
+	pdfauthor={Ryan Schuetzler},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
+
+% DOCUMENT
+\begin{document}
+{\LARGE Ryan M. Schuetzler, Ph.D.}\\[1cm]
+Brigham Young University\\
+Provo, UT \texttt{84602}
+U.S.A.\\[.2cm]
+% Phone: \texttt{(402) 554-3007}\\[.2cm]
+email: \href{mailto:ryan.schuetzler@byu.edu}{ryan.schuetzler@byu.edu}\\
+
+%%\hrule
+\section*{Current Position}
+\emph{Assistant Professor}\\
+Department of Information Systems\\
+Marriott School of Management\\
+Brigham Young University
+
+
+\section*{Research Interests}
+
+In my research, I focus on how people respond to new technology, and how that technology can be built to interact with users most effectively.
+My primary research focuses on human interaction with embodied conversational agents, robots, and chatbots, and the influence of those chat bots on users' feelings and behavior toward those systems. 
+I am interested to learn how people adapt their behavior, either consciously or unconsciously, as they interact with these types of novel systems. 
+
+%\hrule
+\section*{Previous Appointments}
+\noindent
+\years{2015-2020}University of Nebraska at Omaha, Assistant Professor
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2015}\textsc{Ph.D.} in Management Information Systems, University of Arizona\\
+\years{2010}\textsc{MS} in Information Systems Management, Brigham Young University\\
+\years{2010}\textsc{BS} in Information Systems, Brigham Young University
+
+%\hrule
+\section*{Grants, Honors \& Awards}
+\noindent
+\years{2019-2020}Principal Investigator, \emph{The Role of Expectations in Shaping Impressions of Artificial Intelligence}, 
+University Committee on Research and Creative Activity, University of Nebraska at Omaha, \$5,000.\\
+
+\years{2015--2018}Principal investigator, \emph{Dynamic Interviewing Agents},
+Nebraska Research Initiative, \$200,000.\\
+
+\years{2015}Co-investigator, \emph{Decision Support Capabilities for National
+	Leadership}, National Strategic Research Institute, \$249,875.
+
+\newpage
+\section*{Publications \& Talks}
+
+\textbf{*} Indicates student co-authors
+
+\subsection*{Selected publications}
+\noindent
+\years{2022}Schuetzler, R., Giboney, J., \& Grimes, G. M. (2022). Design of a Chatbot Social Engineering Victim. \emph{Hawaii International Conference on System Sciences}. January 3--7.\\
+
+\years{}Leavitt, C.\textbf{*}, Corbin, M.\textbf{*}, Keith, M., Schuetzler, R., Anderson, G., \& Kettles, D. (2022). A Chatbot Tutor Can Lessen the Gender Confidence Gap in Information Systems Learning. \emph{Hawaii International Conference on System Sciences}. January 3--7.\\
+
+\years{2021}Grimes, G. M., Schuetzler, R. M., \& Giboney, J.S. (2021). Mental Models and Expectation Violations in Conversational AI Interactions.
+\emph{Decision Support Systems, 144}. \doi{https://doi.org/10.1016/j.dss.2021.113515}\\
+
+\years{}Schuetzler, R. M., Grimes, G. M., Giboney, J. S., \& Rosser, H. K.\textbf{*} (2021). Deciding Whether and How to Deploy Chatbots.
+\emph{MIS Quarterly Executive, 20}(1), p. 4.\\
+
+\years{2020} Schuetzler, R. M., Grimes, G. M., \& Giboney, J. S. (2020). 
+The Impact of Chatbot Conversational Skill on Engagement and Perceived Humanness. 
+\emph{Journal of Management Information Systems, 37}(3), pp.\ 875-900. 
+\doi{https://doi.org/10.1080/07421222.2020.1790204}\\
+
+\years{} Pickard, M., Schuetzler, R. M., Valacich, J. S., \& Wood, D. A. (2020). 
+Innovative Accounting Interviewing: A Comparison of Real and Virtual Accounting Interviewers. 
+\emph{The Accounting Review, 95}(6), pp.\ 339--366.
+\doi{https://doi.org/10.2308/tar-2017-0235}\\
+
+\years{2019} Schuetzler, R. M., Grimes, G. M., \& Giboney, J. S. (2019). 
+The Effect of Conversational Agent Skill on User Behavior during Deception. 
+\emph{Computers in Human Behavior, 97}, pp.\ 250--259. \doi{https://doi.org/10.1016/j.chb.2019.03.033}\\
+
+\years{}Marquardson, J. \& Schuetzler, R. M. (2019). Teaching Tip: Learning by Teaching through Collaborative Tutorial Creation: Experience using GitHub and AsciiDoc. \emph{Journal of Information Systems Education, 30}(1), pp.\ 10--18.\\
+
+\years{}Schuetzler, R. M., Morrison, B. B., \& Hayes, J. (2019). Digital Excellence: A Missing Link. \emph{Americas Conference on Information Systems}, Canc\'{u}n, Mexico, August 15--17.\\
+
+\years{2018}Schuetzler, R. M., Giboney, J. S., Grimes, G. M., \& Nunamaker, J. F. (2018).
+The Influence of Conversational Agent Embodiment and Conversational Relevance on Socially Desirable Responding.
+\emph{Decision Support Systems, 114}, pp.\ 94--102. \doi{https://doi.org/10.1016/j.dss.2018.08.011}
+
+
+\subsection*{Invited Presentations and Panels}
+\noindent
+\years{2022}\emph{When Should a Chatbot Be Less Chatty}. Presentation at AMCIS Workshop on Artificial Intelligence and Human Interaction, Minneapolis, MN.\\
+
+\years{2021}\emph{The Value of Tailoring and Small Talk}. Presentation at the Dagstuhl Seminar: Conversational Agent as Trustworthy Autonomous System (Trust-CA).\\
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+	{\scriptsize  Last updated: \today\- •\-
+		% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+		Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+			%\fontspec{Times New Roman}
+			\XeTeX }\\
+		% ---- FILL IN THE FULL URL TO YOUR CV HERE
+		% \href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}
+	}
+\end{center}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

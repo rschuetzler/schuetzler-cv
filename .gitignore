@@ -3,3 +3,11 @@ cv.log
 cv.aux
 auto/
 *.pdf
+
+*.otf
+*.ttf
+*.fls
+*.synctex.gz
+*.fls
+*.xdv
+*.fdb_latexmk
