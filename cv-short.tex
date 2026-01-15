@@ -1,0 +1,194 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee
+% that it will correctly compile on your system if you have a non-standard
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+% Requires DejaVuSansMono and LinLibettine fonts
+% Download Deja Vu here: http://dejavu-fonts.org/wiki/Download
+% and lin libertine here: http://www.dafont.com/linux-libertine.font
+% For libertine you need R, RB, RBI, and RI fonts
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, letter]{article}
+\usepackage{fontspec}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry}
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm,
+bookmarks, colorlinks, breaklinks=true,
+	pdftitle={Ryan Schuetzler - Vita},
+	pdfauthor={Ryan Schuetzler},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
+
+% DOCUMENT
+\begin{document}
+{\LARGE Ryan M. Schuetzler, Ph.D.}\\[1cm]
+ Information Systems and Quantitative Analysis Department\\
+U.S.A.\\[.2cm]
+Phone: \texttt{(402) 554-3007}\\[.2cm]
+email: \href{mailto:rschuetzler@unomaha.edu}{rschuetzler@unomaha.edu}\\
+
+%%\hrule
+\section*{Current Position}
+\emph{Assistant Professor}\\
+Information Systems and Quantitative Analysis Department\\
+College of Information Science \& Technology\\
+University of Nebraska at Omaha
+
+
+\section*{Research Interests}
+
+My research interests center around users' adaptation and use of novel communication technology. 
+My primary research focuses on human interaction with embodied conversational agents and chat bots, and the influence of those chat bots on users' feelings and behavior toward those systems. 
+I also study users' adaptation to intelligent systems designed to detect deception. 
+I am interested to learn how people adapt their behavior, either consciously or unconsciously, as they interact with novel systems. 
+
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2015}\textsc{Ph.D.} in Management Information Systems, University of Arizona\\
+\years{2010}\textsc{MS} in Information Systems Management, Brigham Young University\\
+\years{2010}\textsc{BS} in Information Systems, Brigham Young University
+
+
+\section*{Most Recent Relevant Publications}
+
+\subsection*{Journal articles}
+\noindent
+\years{2019}Schuetzler, R. M., Grimes, G. M., \& Giboney, J. S. (2019). The Effect of Conversational Agent Skill on User Behavior during Deception. \emph{Computers in Human Behavior, 97}, pp.\ 250--259.\\
+
+\years{2018}Schuetzler, R. M., Giboney, J. S., Grimes, G. M., \& Nunamaker, J. F. (2018).
+The Influence of Conversational Agent Embodiment and Conversational Relevance on Socially Desirable Responding.
+\emph{Decision Support Systems, 114}, pp.\ 94--102.\\
+
+\years{2015} Twyman, N. T., Proudfoot, J. G., Schuetzler, R., Elkins,
+A. C., \& Derrick, D. C. (2015). Robustness of multiple indicators in
+controlled, automated deception detection interviews. \emph{Journal of
+  Management Information Systems, 32}(4), pp.\ 215--245.\\
+
+\subsection*{Conference proceedings}
+\noindent
+
+\years{2018}Pickard, M. D., Schuetzler, R. M., Valacich, J. S., \& Wood, D. (2018).
+Next-Generation Accounting Interviewing: A Comparison of Human and Embodied Conversational Agents (ECAs) as Interviewers.
+\emph{American Accounting Association Midyear Meeting}, Newport Beach, CA, January 18--20.\\
+
+\years{} Schuetzler, R. M., Grimes, G. M., \& Giboney, J. S. (2018).
+An Investigation of Conversational Agent Relevance, Presence, and Engagement
+\emph{Americas Conference on Information Systems}, New Orleans, LA, August 15--18.\\
+
+\years{} Schuetzler, R. M., Giboney, J. S., Grimes, G. M., \& Nunamaker, J.
+F. (2018) The Influence of Conversational Agents on Socially Desirable
+Responding. \emph{Hawaii International Conference on System Sciences}. Waikoloa Village, HI, January 3--6.\\
+
+\years{2016}Schuetzler, R. M., Grimes, G. M., Elkins, A. C., Burgoon, J. K., \&
+Valacich, J. S. (2016) Talking and typing: A comparison of vocalic and keystroke
+dynamic features for deception detection. \emph{Hawaii International Conference
+  on System Sciences}. Koloa, HI, January 5--8.\\
+
+\years{2014}Schuetzler, R. M., Giboney, J. S., Grimes, G. M., \& Buckman,
+J. (2014) Facilitating natural conversational agent interactions: Lessons from a
+deception experiment. \emph{International Conference on Information Systems}. Auckland, New Zealand, December 12-16.\\
+
+
+\subsection*{Invited Presentations and Panels}
+\noindent
+
+\years{2016}\emph{Chatbot for Enhancing Voluntary Information Disclosure}. Webinar for the Center for Identification
+Technology Research, an NSF Industry/University Collaborative Research Center.\\
+
+\years{2015}\emph{Lie to Me: Chatterbot Style}. Webinar for the Center for Identification
+Technology Research, an NSF Industry/University Collaborative Research Center.\\
+
+\emph{A Mobile Interviewing Agent for Deception Detection}. Webinar for the
+Center for Identification Technology Research, an NSF Industry/University Collaborative
+Research Center.\\
+
+\years{2012-2014}\emph{Deception and Automated Credibility Assessment}. Fort Huachuca
+Military Intelligence Captain's Career course.
+
+
+\section*{Technical and Other Skills}
+
+\begin{itemize}
+\itemsep0em
+\item Programming languages: Python, R, Node.js
+\item Web application development with Python and Django
+\item TCP/IP networking (formerly CCNA certified)
+\item SQL \& database management
+\item Linux and Windows servers
+\end{itemize}
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\-
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+% \href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}
+}
+\end{center}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
